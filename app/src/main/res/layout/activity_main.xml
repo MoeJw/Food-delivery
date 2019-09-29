@@ -1,18 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/Regstier_button"
+        android:layout_width="267dp"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_below="@+id/log_in_button"
+        android:layout_alignStart="@+id/log_in_button"
+        android:layout_alignLeft="@+id/log_in_button"
+        android:layout_alignEnd="@+id/log_in_button"
+        android:layout_alignRight="@+id/log_in_button"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:background="@drawable/button_register_green"
+        android:text="@string/register"
+        android:textColor="#fFff" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="188dp"
+        android:layout_height="187dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="14dp"
+        app:srcCompat="@drawable/man" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignEnd="@+id/imageView2"
+        android:layout_alignRight="@+id/imageView2"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="-10dp"
+        android:gravity="center"
+        android:layout_marginRight="-10dp"
+        android:background="@drawable/plain_text_border"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress" />
+
+    <Button
+        android:id="@+id/log_in_button"
+        android:layout_width="267dp"
+        android:layout_height="wrap_content"
+            android:textColor="#fFff"
+        android:layout_below="@+id/editText3"
+        android:layout_alignStart="@+id/editText3"
+        android:layout_alignLeft="@+id/editText3"
+        android:layout_alignEnd="@+id/editText3"
+        android:layout_alignRight="@+id/editText3"
+        android:layout_marginStart="-25dp"
+        android:layout_marginLeft="-25dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="-25dp"
+        android:layout_marginRight="-25dp"
+        android:background="@drawable/button_login_pink"
+        android:text="@string/log_in_button" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:layout_below="@+id/editText"
+        android:layout_alignStart="@+id/editText"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignEnd="@+id/editText"
+        android:layout_alignRight="@+id/editText"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="-1dp"
+        android:layout_marginRight="-1dp"
+        android:background="@drawable/plain_text_border"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Pawssowrd"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="208dp"
+        android:layout_height="36dp"
+        android:layout_below="@+id/Regstier_button"
+        android:layout_alignStart="@+id/Regstier_button"
+        android:layout_alignLeft="@+id/Regstier_button"
+        android:layout_alignEnd="@+id/Regstier_button"
+        android:layout_alignRight="@+id/Regstier_button"
+        android:layout_marginStart="27dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="26dp"
+        android:textAlignment="center"
+        android:text="Forgot yor password?" />
+
+</RelativeLayout>

@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Food delivery</string>
+    <string name="log_in_button">LogIn</string>
+    <string name="register">Register</string>
 </resources>
