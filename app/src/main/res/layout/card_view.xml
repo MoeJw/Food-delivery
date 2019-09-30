@@ -38,24 +38,24 @@
 
     <TextView
         android:id="@+id/text_item"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textStyle="bold"
+        android:layout_width="233dp"
+        android:layout_height="44dp"
         android:layout_alignStart="@+id/view1"
         android:layout_alignLeft="@+id/view1"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="-5dp"
-        android:layout_marginLeft="-5dp"
+        android:layout_marginStart="-7dp"
+        android:layout_marginLeft="-7dp"
         android:layout_marginTop="326dp"
-        android:layout_marginEnd="105dp"
-        android:layout_marginRight="105dp"
-        android:layout_marginBottom="97dp"
-
+        android:layout_marginEnd="163dp"
+        android:layout_marginRight="163dp"
+        android:layout_marginBottom="82dp"
         android:text="Coffe beans and Resturant"
+
         android:textColor="#292929"
-        android:textSize="17sp"
+        android:textSize="14sp"
+        android:textStyle="bold"
         app:fontFamily="@font/abeezee" />
 
     <View
@@ -107,8 +107,8 @@
         android:layout_alignStart="@+id/view1"
         android:layout_alignLeft="@+id/view1"
         android:layout_alignBottom="@+id/view1"
-        android:layout_marginStart="46dp"
-        android:layout_marginLeft="46dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
         android:layout_marginBottom="30dp"
         android:text="7 km from you"
         android:textSize="17sp" />
@@ -124,5 +124,25 @@
         android:layout_marginLeft="249dp"
         android:layout_marginBottom="40dp"
         app:srcCompat="@drawable/dislike" />
+
+    <RatingBar
+        android:id="@+id/listitemrating"
+        android:layout_width="242dp"
+        android:layout_height="43dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-66dp"
+
+        android:layout_marginRight="-66dp"
+        android:layout_marginBottom="84dp"
+        android:isIndicator="true"
+        android:max="6"
+        android:soundEffectsEnabled="true"
+        android:saveEnabled="true"
+        android:scaleX="0.5"
+        android:scaleY="0.5"
+        android:transformPivotX="80dp"
+        android:transformPivotY="0dp" />
 
 </RelativeLayout>
